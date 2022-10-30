@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Account Login</title>
+		<base href="https://opencart.mahardhi.com/MT01/adi/" />
+						<script src="catalog/view/javascript/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
+		<link href="catalog/view/javascript/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen" />
+		<script src="catalog/view/javascript/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+		<link href="catalog/view/javascript/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+		<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+		<link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
+				<script src="catalog/view/javascript/mahardhi/jquery.elevateZoom.min.js"></script>
+		<script src="catalog/view/javascript/jquery/magnific/jquery.magnific-popup.min.js"></script>
+		<script src="catalog/view/javascript/mahardhi/owl.carousel.min.js"></script>
+		<script type="text/javascript" src="catalog/view/javascript/mahardhi/quickview.js"></script>	
+		<link href="catalog/view/theme/mahardhi/stylesheet/mahardhi/owl.carousel.min.css" rel="stylesheet">
+		<link href="catalog/view/theme/mahardhi/stylesheet/mahardhi/owl.theme.default.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="catalog/view/javascript/jquery/magnific/magnific-popup.css">
+					<script type="text/javascript" src="catalog/view/javascript/mahardhi/mahardhi_search.js"></script>
+		
+				<link href="catalog/view/theme/mahardhi/stylesheet/stylesheet.css" rel="stylesheet">
+		<link href="catalog/view/theme/mahardhi/stylesheet/themify-icons.css" rel="stylesheet"/>
+		<link href="catalog/view/theme/mahardhi/stylesheet/animate.min.css" rel="stylesheet"/>
+					<link href="catalog/view/javascript/jquery/swiper/css/swiper.min.css" type="text/css" rel="stylesheet" media="screen" />
+					<link href="catalog/view/javascript/jquery/swiper/css/opencart.css" type="text/css" rel="stylesheet" media="screen" />
+													<script src="catalog/view/javascript/jquery/swiper/js/swiper.jquery.js" type="text/javascript"></script>
+					<script src="catalog/view/javascript/mahardhi/jquery.cookie.js" type="text/javascript"></script>
+				<script src="catalog/view/javascript/common.js" type="text/javascript"></script>
+				<link rel="stylesheet" type="text/css" href="catalog/view/theme/mahardhi/stylesheet/mahardhi/jquery-ui.min.css">
+		<script src="catalog/view/javascript/mahardhi/jquery-ui.min.js"></script>
+
+		<script type="text/javascript" src="catalog/view/javascript/mahardhi/custom.js"></script>
+		
+						<link href="https://opencart.mahardhi.com/MT01/adi/image/catalog/cart.png" rel="icon" />
+					</head>
+	<body class="account-login">
+			    <div class="page-loader">
+	        <div class="home-loader">
+	            <div class="loader-spinner"></div>
+	        </div>
+	    </div>
+	    	    		<nav id="top" class="clearfix">
+			<div class="nav-left"><p><i class="fa fa-phone"></i>&nbsp;Free Support: <b>123456789</b></p></div>
+			<div class="nav-right">
+				<div id="top-links" class="nav myaccount">
+					<ul class="list-inline">
+					<li class="myaccount-dropdown"><a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=account/account" title="My Account" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i>My Account  <i class="fa fa-angle-down"></i></a>
+						<ul class="dropdown-menu dropdown-menu-right">
+															<li><a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=account/register">Register</a></li>
+								<li><a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=account/login">Login</a></li>
+													</ul>
+					</li>
+					</ul>
+				</div>
+				<div class="currency-box">
+  <form action="https://opencart.mahardhi.com/MT01/adi/index.php?route=common/currency/currency" method="post" enctype="multipart/form-data" id="form-currency">
+    <div class="btn-group">
+      <button class="btn btn-link dropdown-toggle" data-toggle="dropdown">                               <strong>$</strong>        <span class="">Currency</span>&nbsp;<i class="fa fa-angle-down"></i></button>
+      <ul class="dropdown-menu currency-menu">
+                        <li>
+          <button class="currency-select btn btn-link btn-block" type="button" name="EUR">€ Euro</button>
+        </li>
+                                <li>
+          <button class="currency-select btn btn-link btn-block" type="button" name="GBP">£ Pound Sterling</button>
+        </li>
+                                <li>
+          <button class="currency-select btn btn-link btn-block" type="button" name="USD">$ US Dollar</button>
+        </li>
+                      </ul>
+    </div>
+    <input type="hidden" name="code" value="" />
+    <input type="hidden" name="redirect" value="https://opencart.mahardhi.com/MT01/adi/index.php?route=account/login" />
+  </form>
+</div>
+ 
+				<div class="languages-box">
+  <form action="https://opencart.mahardhi.com/MT01/adi/index.php?route=common/language/language" method="post" enctype="multipart/form-data" id="form-language">
+    <div class="btn-group">
+      <button class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+             
+      <img src="catalog/language/en-gb/en-gb.png" alt="English" title="English">
+                              <span class="">Language</span>&nbsp;<i class="fa fa-angle-down"></i></button>
+      <ul class="dropdown-menu languages-menu">
+                <li>
+          <button class="btn btn-link btn-block language-select" type="button" name="en-gb"><img src="catalog/language/en-gb/en-gb.png" alt="English" title="English" /> English</button>
+        </li>
+                <li>
+          <button class="btn btn-link btn-block language-select" type="button" name="ar"><img src="catalog/language/ar/ar.png" alt="Arabic" title="Arabic" /> Arabic</button>
+        </li>
+              </ul>
+    </div>
+    <input type="hidden" name="code" value="" />
+    <input type="hidden" name="redirect" value="https://opencart.mahardhi.com/MT01/adi/index.php?route=account/login" />
+  </form>
+</div>
+
+				<div class="top-contact-link"><a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=information/contact">Contact Us</a></div>
+			</div>
+		</nav>
+		<header class="header-fixed">
+			<div class="header-top">
+				<div class="header-link">
+						<div id="logo">
+															<a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=common/home"><img src="https://opencart.mahardhi.com/MT01/adi/image/catalog/logo.png" title="Your Store" alt="Your Store" class="img-responsive" /></a>
+													</div>
+									<nav id="menu" class="navbar nav-menu">
+			<div class="navbar-header">
+				<span id="category">Menu</span>
+				<button type="button" class="btn btn-navbar navbar-toggle" id="btnMenuBar">
+					<span class="addcart-icon"></span>
+				</button>
+							</div>
+						<div id="topCategoryList" class="main-menu menu-navbar clearfix"> 
+				<ul class="nav navbar-nav">
+					<li class="menulist home"><a href="" >Home</a></li>
+																		<li class="dropdown menulist">
+								<a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=product/category&amp;path=20" class="dropdown-toggle" aria-expanded="false">Men</a>
+																<div class="dropdown-menu navcol-menu item-column column-1 ">
+									<div class="dropdown-inner">
+																					<ul class="list-unstyled childs_1">
+																																							<li class="" >
+															<a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=product/category&amp;path=20_26" class="dropdown-toggle" aria-expanded="false">Hoodies</a>
+														</li>
+																																																				<li class="" >
+															<a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=product/category&amp;path=20_27" class="dropdown-toggle" aria-expanded="false">casual</a>
+														</li>
+																																				</ul>
+																					</div>
+																	</div>
+															</li>
+																								<li class="dropdown menulist">
+								<a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=product/category&amp;path=18" class="dropdown-toggle" aria-expanded="false">Womens</a>
+																<div class="dropdown-menu navcol-menu item-column column-1 ">
+									<div class="dropdown-inner">
+																					<ul class="list-unstyled childs_1">
+																																							<li class="dropdown-submenu sub-menu-item" >
+															<a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=product/category&amp;path=18_45" class="dropdown-toggle" aria-expanded="false">Modest fashion</a>
+															<i class="fa fa-angle-right" aria-hidden="true"></i>
+																															<ul class="list-unstyled sub-menu ">
+																																			<li>
+																			<a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=product/category&amp;path=45_42" >Baby Suit</a>
+																		</li>
+																																			<li>
+																			<a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=product/category&amp;path=45_40" >Jackets for Women</a>
+																		</li>
+																																			<li>
+																			<a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=product/category&amp;path=45_39" >Jogers</a>
+																		</li>
+																																			<li>
+																			<a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=product/category&amp;path=45_41" >Tshirts</a>
+																		</li>
+																																	</ul>
+																													</li>
+																																																				<li class="" >
+															<a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=product/category&amp;path=18_46" class="dropdown-toggle" aria-expanded="false">Preppy style</a>
+														</li>
+																																																				<li class="dropdown-submenu sub-menu-item" >
+															<a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=product/category&amp;path=18_57" class="dropdown-toggle" aria-expanded="false">Child</a>
+															<i class="fa fa-angle-right" aria-hidden="true"></i>
+																															<ul class="list-unstyled sub-menu ">
+																																			<li>
+																			<a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=product/category&amp;path=57_49" > Sport Wear</a>
+																		</li>
+																																			<li>
+																			<a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=product/category&amp;path=57_44" >Bath</a>
+																		</li>
+																																			<li>
+																			<a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=product/category&amp;path=57_47" >Blazers</a>
+																		</li>
+																																			<li>
+																			<a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=product/category&amp;path=57_43" >Blu-ray jacket</a>
+																		</li>
+																																			<li>
+																			<a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=product/category&amp;path=57_48" >Round Neck Tshirt</a>
+																		</li>
+																																	</ul>
+																													</li>
+																																																				<li class="dropdown-submenu sub-menu-item" >
+															<a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=product/category&amp;path=18_17" class="dropdown-toggle" aria-expanded="false">Office</a>
+															<i class="fa fa-angle-right" aria-hidden="true"></i>
+																															<ul class="list-unstyled sub-menu ">
+																																			<li>
+																			<a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=product/category&amp;path=17_37" >brand</a>
+																		</li>
+																																			<li>
+																			<a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=product/category&amp;path=17_38" >Ethentic Wear</a>
+																		</li>
+																																			<li>
+																			<a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=product/category&amp;path=17_54" >Jackets</a>
+																		</li>
+																																			<li>
+																			<a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=product/category&amp;path=17_55" >KIds</a>
+																		</li>
+																																			<li>
+																			<a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=product/category&amp;path=17_56" >party wear</a>
+																		</li>
+																																	</ul>
+																													</li>
+																																																				<li class="dropdown-submenu sub-menu-item" >
+															<a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=product/category&amp;path=18_24" class="dropdown-toggle" aria-expanded="false">capree</a>
+															<i class="fa fa-angle-right" aria-hidden="true"></i>
+																															<ul class="list-unstyled sub-menu ">
+																																			<li>
+																			<a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=product/category&amp;path=24_53" >Accessories</a>
+																		</li>
+																																			<li>
+																			<a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=product/category&amp;path=24_50" >Curtas</a>
+																		</li>
+																																			<li>
+																			<a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=product/category&amp;path=24_52" >formal</a>
+																		</li>
+																																			<li>
+																			<a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=product/category&amp;path=24_51" >Trousers</a>
+																		</li>
+																																	</ul>
+																													</li>
+																																				</ul>
+																					</div>
+																	</div>
+															</li>
+																								<li class="dropdown menulist">
+								<a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=product/category&amp;path=25" class="dropdown-toggle" aria-expanded="false">Shop</a>
+																<div class="dropdown-menu navcol-menu item-column column-1 ">
+									<div class="dropdown-inner">
+																					<ul class="list-unstyled childs_1">
+																																							<li class="" >
+															<a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=product/category&amp;path=25_32" class="dropdown-toggle" aria-expanded="false">Kawaii fashion</a>
+														</li>
+																																																				<li class="" >
+															<a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=product/category&amp;path=25_29" class="dropdown-toggle" aria-expanded="false">Men's Shirt</a>
+														</li>
+																																																				<li class="" >
+															<a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=product/category&amp;path=25_31" class="dropdown-toggle" aria-expanded="false">Rocker Chic Style</a>
+														</li>
+																																																				<li class="" >
+															<a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=product/category&amp;path=25_30" class="dropdown-toggle" aria-expanded="false">Ruff JEans</a>
+														</li>
+																																																				<li class="dropdown-submenu sub-menu-item" >
+															<a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=product/category&amp;path=25_28" class="dropdown-toggle" aria-expanded="false">Sarees</a>
+															<i class="fa fa-angle-right" aria-hidden="true"></i>
+																															<ul class="list-unstyled sub-menu ">
+																																			<li>
+																			<a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=product/category&amp;path=28_36" >Business Casual</a>
+																		</li>
+																																			<li>
+																			<a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=product/category&amp;path=28_35" >Streetwear</a>
+																		</li>
+																																	</ul>
+																													</li>
+																																				</ul>
+																					</div>
+																	</div>
+															</li>
+																								<li class="menulist"><a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=product/category&amp;path=33">Office wear</a></li>
+																								<li class="menulist"><a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=product/category&amp;path=34">Products</a></li>
+																						<li class="blog"><a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=blog/blog">Blogs</a></li>
+									</ul>
+			</div>
+		</nav>
+	
+					<div class="header-right">
+						<ul>
+							<li class="header-search-btn"><div class="btn-search"><span class="ti-search"></span></div></li>
+							<li>
+								<a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=account/wishlist" id="wishlist-total" title="0">
+									<span class="wishlist-total">0</span>
+									<span class="ti-heart"></span>
+								</a>
+							</li>
+							<li class="mycart"><div id="cart" class="btn-group btn-block">
+	<button type="button" data-toggle="dropdown" class="btn btn-inverse btn-block btn-lg dropdown-toggle"><span id="cart-total">0</span><span class="ti-bag"></span></button>
+	<ul class="dropdown-menu pull-right header-cart-toggle">
+					<li>
+				<p class="text-center product-cart-empty">Your shopping cart is empty!</p>
+			</li>
+			</ul>
+</div>
+</li>
+						</ul>
+					</div>
+					<div class="header-search">
+						<div id="mahardhiSearch" class="input-group mahardhi-search">
+			<select name="category_id" class="form-control input-lg">
+			<option value="0">All Categories</option>
+												<option value="20">Men</option>
+																			<option value="26">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hoodies</option>
+																									<option value="27">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;casual</option>
+																										<option value="18">Womens</option>
+																			<option value="45">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Modest fashion</option>
+																							<option value="42">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Baby Suit</option>
+																								<option value="40">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jackets for Women</option>
+																								<option value="39">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jogers</option>
+																								<option value="41">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tshirts</option>
+																										<option value="46">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Preppy style</option>
+																									<option value="57">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Child</option>
+																							<option value="49">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sport Wear</option>
+																								<option value="44">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bath</option>
+																								<option value="47">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Blazers</option>
+																								<option value="43">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Blu-ray jacket</option>
+																								<option value="48">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Round Neck Tshirt</option>
+																										<option value="17">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Office</option>
+																							<option value="37">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;brand</option>
+																								<option value="38">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ethentic Wear</option>
+																								<option value="54">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jackets</option>
+																								<option value="55">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;KIds</option>
+																								<option value="56">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;party wear</option>
+																										<option value="24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;capree</option>
+																							<option value="53">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Accessories</option>
+																								<option value="50">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Curtas</option>
+																								<option value="52">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;formal</option>
+																								<option value="51">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Trousers</option>
+																											<option value="25">Shop</option>
+																			<option value="32">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kawaii fashion</option>
+																									<option value="29">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Men's Shirt</option>
+																									<option value="31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rocker Chic Style</option>
+																									<option value="30">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ruff JEans</option>
+																									<option value="28">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sarees</option>
+																							<option value="36">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Business Casual</option>
+																								<option value="35">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Streetwear</option>
+																											<option value="33">Office wear</option>
+																				<option value="34">Products</option>
+													</select>
+		<input type="text" name="search" value="" placeholder="Search" class="form-control input-lg ui-autocomplete-input" autofocus="autofocus" />
+	<span class="btn-search input-group-btn">
+		<button type="button" class="btn btn-default btn-lg"><i class="ti-search"></i></button>
+	</span>
+</div>
+
+<script type="text/javascript">
+$('#mahardhiSearch .btn-search button').bind('click', function() {
+	url = 'index.php?route=product/search';
+
+	var search = $('#mahardhiSearch input[name=\'search\']').prop('value');
+	if (search) {
+		url += '&search=' + encodeURIComponent(search);
+	}
+
+	var category_id = $('#mahardhiSearch select[name=\'category_id\']').prop('value');
+	if (category_id > 0) {
+		url += '&category_id=' + encodeURIComponent(category_id);
+		// url += '&sub_category=true';
+		// url += '&description=true';
+	}
+
+	location = url;
+});
+
+$('#mahardhiSearch input[name=\'search\']').bind('keydown', function(e) {
+	if (e.keyCode == 13) {
+		$('#mahardhiSearch .btn-search button').trigger('click');
+	}
+});
+</script>
+
+						<span class="search-close-icon close-button"><i class="ti-close"></i></span>
+					</div>
+				</div>
+
+			</div>
+		</header>
+
+<div id="account-login" class="container">
+  <ul class="breadcrumb">
+        <li><a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=common/home"><i class="fa fa-home"></i></a></li>
+        <li><a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=account/account">Account</a></li>
+        <li><a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=account/login">Login</a></li>
+      </ul>
+      <div class="row"><aside id="column-left" class="col-sm-3 hidden-xs">
+    <div class="account-content widget-sidebar">
+	<div class="box-content">
+		<div class="list-group">
+			<h3 class="toggled">Account</h3>
+			<ul class="list-unstyled">
+									<a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=account/login" class="list-group-item">Login</a>
+					<a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=account/register" class="list-group-item">Register</a>
+					<a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=account/forgotten" class="list-group-item">Forgotten Password</a>
+								<a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=account/account" class="list-group-item">My Account</a>
+								<a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=account/address" class="list-group-item">Address Book</a>
+				<a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=account/wishlist" class="list-group-item">Wish List</a>
+				<a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=account/order" class="list-group-item">Order History</a>
+				<a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=account/download" class="list-group-item">Downloads</a>
+				<a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=account/recurring" class="list-group-item">Recurring payments</a>
+				<a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=account/reward" class="list-group-item">Reward Points</a>
+				<a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=account/return" class="list-group-item">Returns</a>
+				<a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=account/transaction" class="list-group-item">Transactions</a>
+				<a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=account/newsletter" class="list-group-item">Newsletter</a>
+							</ul>
+		</div>
+	</div>
+</div>
+    <div class="sidebar widget-sidebar">
+	<div class="box-content">
+		<h3 class="box-content toggled">Information</h3>
+		<ul class="list-unstyled">
+							<li><a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=information/information&amp;information_id=4">About Us</a></li>
+							<li><a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=information/information&amp;information_id=6">Delivery Information</a></li>
+							<li><a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=information/information&amp;information_id=3">Privacy Policy</a></li>
+							<li><a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=information/information&amp;information_id=5">Terms &amp; Conditions</a></li>
+						<li><a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=information/contact">Contact Us</a></li>
+			<li><a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=information/sitemap">Site Map</a></li>
+		</ul>
+	</div>
+</div>
+
+    <div class="swiper-viewport widget-sidebar">
+	<div id="banner0" class="swiper-container">
+		<div class="swiper-wrapper">
+							<div class="swiper-slide">
+											<a href="#"><img src="https://opencart.mahardhi.com/MT01/adi/image/cache/catalog/banners/left-banner-255x334.jpg" alt="left banner" class="img-responsive" /></a>
+									</div>
+					</div>
+	</div>
+</div>
+<script type="text/javascript"><!--
+if($('#banner0 .swiper-slide').length > 1) {
+	$('#banner0').swiper({
+		effect: 'fade',
+		autoplay: 2500,
+		autoplayDisableOnInteraction: false
+	});
+}
+--></script>
+
+  </aside>
+
+                <div id="content" class="col-sm-9">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="well">
+            <h2>New Customer</h2>
+            <p><strong>Register Account</strong></p>
+            <p>By creating an account you will be able to shop faster, be up to date on an order's status, and keep track of the orders you have previously made.</p>
+            <a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=account/register" class="btn btn-primary">Continue</a></div>
+        </div>
+        <div class="col-sm-6">
+          <div class="well">
+            <h2>Returning Customer</h2>
+            <p><strong>I am a returning customer</strong></p>
+            <form action="https://opencart.mahardhi.com/MT01/adi/index.php?route=account/login" method="post" enctype="multipart/form-data">
+              <div class="form-group">
+                <label class="control-label" for="input-email">E-Mail Address</label>
+                <input type="text" name="email" value="" placeholder="E-Mail Address" id="input-email" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label class="control-label" for="input-password">Password</label>
+                <input type="password" name="password" value="" placeholder="Password" id="input-password" class="form-control" />
+                <a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=account/forgotten">Forgotten Password</a></div>
+              <input type="submit" value="Login" class="btn btn-primary" />
+                            <input type="hidden" name="redirect" value="https://opencart.mahardhi.com/MT01/adi/index.php?route=account/account" />
+                          </form>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+</div>
+<footer>
+	<div class="footer-top">
+		<div class="container">
+			<div class="row">			
+				<div class="col-sm-4 clearfix footer-left-panel">
+					<div class="position-footer-left">
+<div>  <div class="footer-block contact-info-block"><h5 class="footer-title">Contact Info</h5><ul class="list-unstyled"><li><i class="fa fa-location-arrow"></i>71 Pennington Lane Vernon Rockville, <br> CT 06066</li><li><i class="fa fa-phone"></i>0123-456-789</li><li><i class="fa fa-fax"></i>0123-456-789</li><li><i class="fa fa-envelope"></i><a href="mailto:theme@demo.com">theme@demo.com</a></li></ul></div></div>
+
+</div>
+
+
+
+				</div>
+								<div class="col-sm-2 clearfix">
+					<h5>Information</h5>
+					<ul class="list-unstyled">
+					 						<li><a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=information/information&amp;information_id=4">About Us</a></li>
+												<li><a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=information/information&amp;information_id=6">Delivery Information</a></li>
+												<li><a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=information/information&amp;information_id=3">Privacy Policy</a></li>
+												<li><a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=information/information&amp;information_id=5">Terms &amp; Conditions</a></li>
+												<li><a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=information/sitemap">Site Map</a></li>
+					</ul>
+				</div>
+								
+				<div class="col-sm-2 clearfix">
+					<h5>Extras</h5>
+					<ul class="list-unstyled">
+						<li><a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=product/manufacturer">Brands</a></li>
+						<li><a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=account/voucher">Gift Certificates</a></li>
+						<li><a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=affiliate/login">Affiliate</a></li>
+						<li><a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=product/special">Specials</a></li>
+						<li><a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=information/contact">Contact Us</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-4 clearfix footer-right-panel">
+					<div class="position-footer-right">
+<div class="newsletter-wrapper nessletter_banner">
+	<div class="newsletter-inner newsletter-block clearfix">
+		<div class="text-content">
+			<h3 class="title-text">OUR NEWSLETTER</h3>			
+		</div>
+		<div class="newsletter-form">
+			<!-- newsletter box -->
+			<p>Sign up for our newsletter to get the latest news, announcements and special.</p>
+			<div class="newsletter-form-box">
+				<form name="frmnewsletter" id="frmnewsletter" onsubmit="subscribe();return false" method="post">
+					<div class="subscribe-form">
+						<input type="email" name="newsletter_usr_email" id="newsletter_usr_email" placeholder="Enter Email Address..." class="form-control input-lg inputNew txtemail" required>
+						<button type="submit" class="btn btn-default btn-lg button_mini subscribe-btn" >Subscribe</button>
+					</div>
+					<!-- newsletter notofication -->
+					<div class="newsletter-message">
+					</div>
+					<!-- newsletter notofication -->
+				</form>
+			</div>
+			<!-- newsletter box -->					
+		</div>
+	</div>
+</div>
+<script><!--
+//add 
+function subscribe(){
+	$.ajax({
+		type: 'post',
+		url: 'index.php?route=extension/module/mahardhi_newsletter/subscribe',
+		dataType: 'html',
+		data:$("#frmnewsletter").serialize(),
+		success: function (html) {
+			try {
+				eval(html);
+			}
+			catch (e) {
+			}				
+		}
+	});
+}
+
+// check for validation
+$(document).ready(function() {
+	$('#newsletter_usr_email').keypress(function(e) {
+		if(e.which == 13) {
+			e.preventDefault();
+			subscribe();
+		}	
+	});
+});	
+//--></script>
+</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer-bottom clearfix">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<p class="powered">Powered By <a href="http://www.opencart.com">OpenCart</a> Your Store &copy; 2022</p>    
+				</div>
+				<div class="col-md-6">
+					<div class="position-footer-bottom">
+<div>  <div class="social-block"><ul><li><a href="#"><i class="fa fa-facebook"></i></a></li><li><a href="#"><i class="fa fa-twitter"></i></a></li><li><a href="#"><i class="fa fa-google-plus"></i></a></li><li><a href="#"><i class="fa fa-youtube"></i></a></li><li><a href="#"><i class="fa fa-pinterest"></i></a></li></ul></div></div>
+
+</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- top scroll -->
+<a href="#" class="scrollToTop back-to-top"><span class="ti-angle-double-up"></span></a>
+
+
+</body>
+</html>
