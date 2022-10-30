@@ -708,6 +708,8 @@ header.active .header-top {
 }
 .header-top{
     padding: 0 25px;
+    box-shadow: 0 10px 10px 0px #00000078 !important;
+
 }
 /* logo */
 #logo {
