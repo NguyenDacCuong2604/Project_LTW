@@ -5,8 +5,7 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Account Login</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+	<title>Thông tin giao hàng</title>
 	<script src="../catalog/view/javascript/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
 	<link href="../catalog/view/javascript/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen" />
 	<script src="../catalog/view/javascript/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
@@ -14,7 +13,7 @@
 	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
 		rel="stylesheet">
 	<link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
-
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 	<script src="../catalog/view/javascript/mahardhi/jquery.elevateZoom.min.js"></script>
 	<script src="../catalog/view/javascript/jquery/magnific/jquery.magnific-popup.min.js"></script>
 	<script src="../catalog/view/javascript/mahardhi/owl.carousel.min.js"></script>
@@ -27,11 +26,6 @@
 	<link href="../catalog/view/theme/mahardhi/stylesheet/stylesheet.css" rel="stylesheet">
 	<link href="../catalog/view/theme/mahardhi/stylesheet/themify-icons.css" rel="stylesheet" />
 	<link href="../catalog/view/theme/mahardhi/stylesheet/animate.min.css" rel="stylesheet" />
-	<link href="../catalog/view/javascript/jquery/swiper/css/swiper.min.css" type="text/css" rel="stylesheet"
-		media="screen" />
-	<link href="../catalog/view/javascript/jquery/swiper/css/opencart.css" type="text/css" rel="stylesheet"
-		media="screen" />
-	<script src="../catalog/view/javascript/jquery/swiper/js/swiper.jquery.js" type="text/javascript"></script>
 	<script src="../catalog/view/javascript/mahardhi/jquery.cookie.js" type="text/javascript"></script>
 	<script src="../catalog/view/javascript/common.js" type="text/javascript"></script>
 	<link rel="stylesheet" type="text/css" href="../catalog/view/theme/mahardhi/stylesheet/mahardhi/jquery-ui.min.css">
@@ -42,7 +36,7 @@
 	<link href="https://opencart.mahardhi.com/MT01/adi/image/../catalog/cart.png" rel="icon" />
 </head>
 
-<body class="account-login">
+<body class="information-contact">
 	<div class="page-loader">
 		<div class="home-loader">
 			<div class="loader-spinner"></div>
@@ -72,8 +66,7 @@
 				</ul>
 			</div>
 			<div class="top-contact-link"><a
-					href="https://opencart.mahardhi.com/MT01/adi/index.php?route=information/contact">Thông tin về
-					shop</a></div>
+					href="contactus.html">Thông tin về shop</a></div>
 		</div>
 	</nav>
 	<!-- header -->
@@ -350,11 +343,11 @@
 		</div>
 	</header>
 
-	<div id="account-login" class="container">
+	<div id="information-contact" class="container">
 		<ul class="breadcrumb">
-			<li><a href="index.html"><i class="fa fa-home"></i></a></li>
-			<li><a href="login.html">Tài khoản</a></li>
-			<li><a href="login.html">Đăng nhập</a></li>
+			<li><a href="index.html"><i
+						class="fa fa-home"></i></a></li>
+			<li><a href="deliveryinformation.html">Thông tin giao hàng</a></li>
 		</ul>
 		<div class="row">
 			<aside id="column-left" class="col-sm-3 hidden-xs">
@@ -436,47 +429,8 @@
 			</aside>
 
 			<div id="content" class="col-sm-9">
-				<div class="row">
-					<div class="col-sm-6">
-						<div class="well">
-							<h1 style="font-size: 30px;">KHÁCH HÀNG MỚI</h1>
-							<h2>Đăng ký tài khoản</h2>
-							<p>
-								Bằng cách tạo tài khoản, bạn sẽ có thể mua sắm nhanh hơn, cập nhật trạng thái đơn hàng
-								và theo dõi các đơn hàng bạn đã thực hiện trước đó.</p>
-							<br>
-							<!-- link đăng ký tài khoản -->
-							<a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=account/register"
-								class="btn btn-primary">Tiếp tục</a>
-						</div>
-					</div>
-					<div class="col-sm-6">
-						<div class="well">
-							<h1 style="font-size: 30px;">ĐĂNG NHẬP TÀI KHOẢN</h1>
-							<form action="https://opencart.mahardhi.com/MT01/adi/index.php?route=account/login"
-								method="post" enctype="multipart/form-data">
-								<div class="form-group">
-									<label class="control-label" for="input-email" style="font-size: 18px;">Địa chỉ
-										Email đăng nhập</label>
-									<input type="text" name="email" value="" placeholder="Nhập địa chỉ email"
-										id="input-email" class="form-control" />
-								</div>
-								<div class="form-group">
-									<label class="control-label" for="input-password" style="font-size: 18px;">Mật
-										khẩu</label>
-									<input type="password" name="password" value="" placeholder="Mật khẩu"
-										id="input-password" class="form-control" />
-									<!-- link trang quên mật khẩu -->
-									<a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=account/forgotten">Quên
-										mật khẩu?</a>
-								</div>
-								<input type="submit" value="Đăng nhập" class="btn btn-primary" />
-								<input type="hidden" name="redirect"
-									value="https://opencart.mahardhi.com/MT01/adi/index.php?route=account/account" />
-							</form>
-						</div>
-					</div>
-				</div>
+				<h1>THÔNG TIN GIAO HÀNG</h1>
+				Thư làm thông tin giao hàng nha
 			</div>
 		</div>
 	</div>
@@ -624,7 +578,6 @@
 	</footer>
 	<!-- top scroll -->
 	<a href="#" class="scrollToTop back-to-top"><i class="fa-solid fa-angles-up"></i></a>
-
 
 </body>
 

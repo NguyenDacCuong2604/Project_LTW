@@ -5,16 +5,17 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Account Login</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-	<script src="../catalog/view/javascript/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
+	<title>Video liên quan</title>
+	<meta name="description" content="Blog Description" />
+	<meta name="keywords" content="Blog Keyword" />
+	<script src="../../catalog/view/javascript/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
 	<link href="../catalog/view/javascript/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen" />
 	<script src="../catalog/view/javascript/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 	<link href="../catalog/view/javascript/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
 		rel="stylesheet">
 	<link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
-
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 	<script src="../catalog/view/javascript/mahardhi/jquery.elevateZoom.min.js"></script>
 	<script src="../catalog/view/javascript/jquery/magnific/jquery.magnific-popup.min.js"></script>
 	<script src="../catalog/view/javascript/mahardhi/owl.carousel.min.js"></script>
@@ -42,7 +43,7 @@
 	<link href="https://opencart.mahardhi.com/MT01/adi/image/../catalog/cart.png" rel="icon" />
 </head>
 
-<body class="account-login">
+<body class="blog-blog">
 	<div class="page-loader">
 		<div class="home-loader">
 			<div class="loader-spinner"></div>
@@ -65,18 +66,16 @@
 							<li><a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=account/register">Đăng
 									ký</a></li>
 							<!-- Đăng nhập -->
-							<li><a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=account/login">Đăng
+							<li><a href="login.html">Đăng
 									nhập</a></li>
 						</ul>
 					</li>
 				</ul>
 			</div>
-			<div class="top-contact-link"><a
-					href="https://opencart.mahardhi.com/MT01/adi/index.php?route=information/contact">Thông tin về
+			<div class="top-contact-link"><a href="contactus.html">Thông tin về
 					shop</a></div>
 		</div>
 	</nav>
-	<!-- header -->
 	<header class="header-fixed">
 		<div class="header-top">
 			<div class="header-link">
@@ -240,7 +239,7 @@
 							<li class="menulist"><a
 									href="https://opencart.mahardhi.com/MT01/adi/index.php?route=product/category&amp;path=33"
 									style="font-size: 16px;">Video
-									sản phẩm</a>
+									liên quan</a>
 							</li>
 							<li class="blog"><a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=blog/blog"
 									style="font-size: 16px;">Trang bài
@@ -350,66 +349,207 @@
 		</div>
 	</header>
 
-	<div id="account-login" class="container">
-		<ul class="breadcrumb">
-			<li><a href="index.html"><i class="fa fa-home"></i></a></li>
-			<li><a href="login.html">Tài khoản</a></li>
-			<li><a href="login.html">Đăng nhập</a></li>
-		</ul>
+	<div id="category-blogs" class="container">
 		<div class="row">
 			<aside id="column-left" class="col-sm-3 hidden-xs">
-				<div class="account-content widget-sidebar">
-					<div class="box-content">
-						<div class="list-group">
-							<h3 class="toggled">TÀI KHOẢN</h3>
-							<ul class="list-unstyled">
-								<a href="login.html" class="list-group-item">Đăng nhập</a>
-								<!-- link trang đăng ký -->
-								<a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=account/register"
-									class="list-group-item">Đăng ký</a>
-								<!-- link quên mật khẩu  -->
-								<a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=account/forgotten"
-									class="list-group-item">Quên mật khẩu</a>
-								<br>
-							</ul>
-						</div>
+				<div class="category-list widget-sidebar">
+					<div class="box-category">
+						<h3 class="toggled relative">DANH MỤC SẢN PHẨM</h3>
+						<ul class="list-unstyled parent" id="selectMe-desk">
+							<li class="has-more-category">
+								<a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=product/category&amp;path=20"
+									class="list-group-item main-item">Thắt lưng nam<span class="toggled"></span></a>
+								<ul class="list-unstyled child-categories group">
+									<li>
+										<a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=product/category&amp;path=20_26"
+											class="list-group-item">&nbsp;&nbsp;&nbsp; Thắt lưng da bò</a>
+									</li>
+									<li>
+										<a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=product/category&amp;path=20_27"
+											class="list-group-item">&nbsp;&nbsp;&nbsp; Thắt lưng da cá sấu</a>
+									</li>
+									<li>
+										<a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=product/category&amp;path=20_27"
+											class="list-group-item">&nbsp;&nbsp;&nbsp; Thắt lưng da đà điểu</a>
+									</li>
+								</ul>
+							</li>
+							<li class="has-more-category">
+								<a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=product/category&amp;path=18"
+									class="list-group-item main-item">Mặt thắt lưng<span class="toggled"></span></a>
+								<ul class="list-unstyled child-categories group">
+									<li>
+										<a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=product/category&amp;path=18_45"
+											class="list-group-item">&nbsp;&nbsp;&nbsp; Mặt thắt lưng khóa kim</a>
+									</li>
+									<li>
+										<a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=product/category&amp;path=18_46"
+											class="list-group-item">&nbsp;&nbsp;&nbsp; Mặt thắt lưng khóa trượt</a>
+									</li>
+								</ul>
+							</li>
+							<li class="has-more-category">
+								<a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=product/category&amp;path=25"
+									class="list-group-item main-item">Dây thắt lưng rời<span class="toggled"></span></a>
+								<ul class="list-unstyled child-categories group">
+									<li>
+										<a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=product/category&amp;path=25_32"
+											class="list-group-item">&nbsp;&nbsp;&nbsp; Dây da bò</a>
+									</li>
+									<li>
+										<a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=product/category&amp;path=25_29"
+											class="list-group-item">&nbsp;&nbsp;&nbsp; Dây da cá sấu</a>
+									</li>
+									<li>
+										<a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=product/category&amp;path=25_31"
+											class="list-group-item">&nbsp;&nbsp;&nbsp; Dây da đà điểu</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
 					</div>
 				</div>
-				<div class="sidebar widget-sidebar">
-					<div class="box-content">
-						<h3 class="box-content toggled">THÔNG TIN</h3>
-						<ul class="list-unstyled">
-							<li>
-								<!-- link ve chung toi -->
-								<a
-									href="aboutus.html">Về
-									chúng tôi</a>
-							</li>
-							<li>
-								<!-- link thong tin giao hang -->
-								<a
-									href="deliveryinformation.html">Thông
-									tin giao hàng</a>
-							</li>
-							<li>
-								<!-- link chinh sach bao mat -->
-								<a
-									href="privacypolicy.html">Chính
-									sách bảo mật</a>
-							</li>
-							<li>
-								<!-- link dieu khoan va dieu kien -->
-								<a
-									href="termsandconditions.html">Điều
-									khoản và điều kiện</a>
-							</li>
-							<li>
-								<!-- link lien he chung toi -->
-								<a href="contactus.html">Liên
-									hệ chúng tôi</a>
-							</li>
-							<li></li>
-						</ul>
+
+				<script type="text/javascript">
+					$(function () {
+						$(".parent .fa.fa-plus").remove();
+						$(".parent .toggled").append("<i class='fa fa-plus'></i>");
+						$('.parent .toggled').click(function (e) {
+							e.preventDefault();
+							if (!$(this).parent().hasClass('active')) {
+								$('+ ul', $('a.list-group-item.main-item')).slideUp();
+								$('a.list-group-item.main-item').removeClass('active');
+							}
+							$(this).parent().toggleClass('active');
+							$('+ ul', $(this).parent()).slideToggle('slow');
+							return false;
+						});
+					});
+				</script>
+
+				<div class="box widget-sidebar">
+					<div class="box-heading">
+						<div class="box-content special">
+							<div class="page-title toggled">
+								<h3 class="relative">Đặc biệt</h3>
+							</div>
+							<div class="block_box">
+								<div class="row">
+									<div id="special-carousel" class="box-product  clearfix" data-items="4">
+										<div class="product-layout col-lg-3 col-md-4 col-sm-4 col-xs-6">
+											<div class="product-thumb transition clearfix">
+												<div class="image">
+													<a
+														href="https://opencart.mahardhi.com/MT01/adi/index.php?route=product/product&amp;product_id=30"><img
+															src="https://opencart.mahardhi.com/MT01/adi/image/cache/../catalog/product/10-80x109.jpg"
+															alt="hoodies" title="hoodies" class="img-responsive" /></a>
+													<div class="image_block"></div>
+													<div class="product_btn">
+														<div class="button-group">
+															<button type="button" class="compare" data-toggle="tooltip"
+																title="Compare this Product"
+																onclick="compare.add('30');"><i
+																	class="fa fa-files-o"></i></button>
+															<button type="button" class="wishlist" data-toggle="tooltip"
+																title="Add to Wish List"
+																onclick="wishlist.add('30');"><i
+																	class="fa fa-heart-o"></i></button>
+															<button type="button" class="addcart"
+																onclick="cart.add('30');"><span>Add to
+																	Cart</span></button>
+														</div>
+													</div>
+												</div>
+												<div class="thumb-description clearfix">
+													<div class="caption">
+														<h4 class="product-title"><a
+																href="https://opencart.mahardhi.com/MT01/adi/index.php?route=product/product&amp;product_id=30">hoodies</a>
+														</h4>
+														<p>Canon's press material for the EOS 5D states that it 'defines
+															(a) new D-SLR category', while we're not typically too
+															concerned with marketing talk thi..</p>
+														<div class="rating">
+															<span class="fa fa-stack"><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+														</div>
+														<p class="price">
+															<span class="price-new">$98.00</span> <span
+																class="price-old">$122.00</span>
+															<span class="price-tax">Ex Tax: $80.00</span>
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="product-layout col-lg-3 col-md-4 col-sm-4 col-xs-6">
+											<div class="product-thumb transition clearfix">
+												<div class="image">
+													<a
+														href="https://opencart.mahardhi.com/MT01/adi/index.php?route=product/product&amp;product_id=42"><img
+															src="https://opencart.mahardhi.com/MT01/adi/image/cache/../catalog/product/1-80x109.jpg"
+															alt="ladies shirt" title="ladies shirt"
+															class="img-responsive" /></a>
+													<div class="image_block"></div>
+													<div class="product_btn">
+														<div class="button-group">
+															<button type="button" class="compare" data-toggle="tooltip"
+																title="Compare this Product"
+																onclick="compare.add('42');"><i
+																	class="fa fa-files-o"></i></button>
+															<button type="button" class="wishlist" data-toggle="tooltip"
+																title="Add to Wish List"
+																onclick="wishlist.add('42');"><i
+																	class="fa fa-heart-o"></i></button>
+															<button type="button" class="addcart"
+																onclick="cart.add('42');"><span>Add to
+																	Cart</span></button>
+														</div>
+													</div>
+												</div>
+												<div class="thumb-description clearfix">
+													<div class="caption">
+														<h4 class="product-title"><a
+																href="https://opencart.mahardhi.com/MT01/adi/index.php?route=product/product&amp;product_id=42">ladies
+																shirt</a></h4>
+														<p>The 30-inch Apple Cinema HD Display delivers an amazing 2560
+															x 1600 pixel resolution. Designed specifically for the
+															creative professional, this displa..</p>
+														<div class="rating">
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span> <span
+																class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span> <span
+																class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span> <span
+																class="fa fa-stack"><i
+																	class="fa fa-star-o fa-stack-2x"></i></span> <span
+																class="fa fa-stack"><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+														</div>
+														<p class="price">
+															<span class="price-new">$110.00</span> <span
+																class="price-old">$122.00</span>
+															<span class="price-tax">Ex Tax: $90.00</span>
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 
@@ -436,49 +576,52 @@
 			</aside>
 
 			<div id="content" class="col-sm-9">
-				<div class="row">
-					<div class="col-sm-6">
-						<div class="well">
-							<h1 style="font-size: 30px;">KHÁCH HÀNG MỚI</h1>
-							<h2>Đăng ký tài khoản</h2>
-							<p>
-								Bằng cách tạo tài khoản, bạn sẽ có thể mua sắm nhanh hơn, cập nhật trạng thái đơn hàng
-								và theo dõi các đơn hàng bạn đã thực hiện trước đó.</p>
-							<br>
-							<!-- link đăng ký tài khoản -->
-							<a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=account/register"
-								class="btn btn-primary">Tiếp tục</a>
-						</div>
-					</div>
-					<div class="col-sm-6">
-						<div class="well">
-							<h1 style="font-size: 30px;">ĐĂNG NHẬP TÀI KHOẢN</h1>
-							<form action="https://opencart.mahardhi.com/MT01/adi/index.php?route=account/login"
-								method="post" enctype="multipart/form-data">
-								<div class="form-group">
-									<label class="control-label" for="input-email" style="font-size: 18px;">Địa chỉ
-										Email đăng nhập</label>
-									<input type="text" name="email" value="" placeholder="Nhập địa chỉ email"
-										id="input-email" class="form-control" />
-								</div>
-								<div class="form-group">
-									<label class="control-label" for="input-password" style="font-size: 18px;">Mật
-										khẩu</label>
-									<input type="password" name="password" value="" placeholder="Mật khẩu"
-										id="input-password" class="form-control" />
-									<!-- link trang quên mật khẩu -->
-									<a href="https://opencart.mahardhi.com/MT01/adi/index.php?route=account/forgotten">Quên
-										mật khẩu?</a>
-								</div>
-								<input type="submit" value="Đăng nhập" class="btn btn-primary" />
-								<input type="hidden" name="redirect"
-									value="https://opencart.mahardhi.com/MT01/adi/index.php?route=account/account" />
-							</form>
+				<ul class="breadcrumb">
+					<li><a href="index.html"><i class="fa fa-home"></i></a></li>
+					<li><a href="videoreview.html">Video liên quan</a></li>
+				</ul>
+				<h2 class="page_title">VIDEO LIÊN QUAN</h2>
+				<br>
+				<div class="blog-layout product-list blog-category clearfix">
+					<div class="product-thumb blog-block clearfix">
+						<h3 style="text-align: center;">so sánh thắt lưng da thật và giả</h3>
+						<div style="text-align: center;"><iframe id="_ytid_87190" width="560" height="315"
+								src="https://www.youtube.com/embed/0pstdfcqq_Q"
+								title="YouTube player" data-epytgalleryid="epyt_gallery_15679"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen data-no-lazy="1" data-skipgform_ajax_framebjll=""></iframe>
 						</div>
 					</div>
 				</div>
+				<br>
+				<div class="blog-layout product-list blog-category clearfix">
+					<div class="product-thumb blog-block clearfix">
+						<h3 style="text-align: center;">chọn thắt lưng da nam làm quà tặng cho nam giới</h3>
+						<div style="text-align: center;"><iframe width="560" height="315"
+								src="https://www.youtube.com/embed/CxedCiwHEzA" title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen></iframe></div>
+					</div>
+				</div>
+				<br>
+				<div class="blog-layout product-list blog-category clearfix">
+					<div class="product-thumb blog-block clearfix">
+						<h3 style="text-align: center;">Tuyệt chiêu phân biệt da cá sấu thật giả</h3>
+						<div style="text-align: center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/zr0lzv4ccxc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+					</div>
+				</div>
+				<br>
+				<div class="blog-layout product-list blog-category clearfix">
+					<div class="product-thumb blog-block clearfix">
+						<h3 style="text-align: center;">3 Cách phân biệt thắt lưng da thật và giả</h3>
+						<div style="text-align: center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/YHDnl5qoTww" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+					</div>
+				</div>
 			</div>
+
 		</div>
+
 	</div>
 	<footer>
 		<div class="footer-top">
@@ -510,16 +653,11 @@
 					<div class="col-sm-2 clearfix">
 						<h5>THÔNG TIN</h5>
 						<ul class="list-unstyled">
-							<li><a
-									href="aboutus.html">Về chúng tôi</a></li>
-							<li><a
-									href="deliveryinformation.html">Thông tin giao hàng</a></li>
-							<li><a
-									href="privacypolicy.html">Chính sách bảo mật</a></li>
-							<li><a
-									href="termsandconditions.html">Điều khoản và điều kiện</a></li>
-							<li><a 
-									href="contactus.html">Liên hệ chúng tôi</a></li>
+							<li><a href="aboutus.html">Về chúng tôi</a></li>
+							<li><a href="deliveryinformation.html">Thông tin giao hàng</a></li>
+							<li><a href="privacypolicy.html">Chính sách bảo mật</a></li>
+							<li><a href="termsandconditions.html">Điều khoản và điều kiện</a></li>
+							<li><a href="contactus.html">Liên hệ chúng tôi</a></li>
 						</ul>
 					</div>
 
@@ -624,7 +762,6 @@
 	</footer>
 	<!-- top scroll -->
 	<a href="#" class="scrollToTop back-to-top"><i class="fa-solid fa-angles-up"></i></a>
-
 
 </body>
 
