@@ -3418,13 +3418,14 @@ p.powered {
     position: relative;
     margin-top: 10px;
 }
-.category-list ul > li a:before{
+.category-list ul > li > a:before{
    position: absolute;
     left: 0;
     line-height: inherit;
     font-family: 'FontAwesome';
     content: "\f105"; 
 }
+
 .category-list ul.child-categories > li a{
     padding: 0
 }
