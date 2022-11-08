@@ -518,6 +518,7 @@ div.required .control-label:before {
 	color: #F00;
 	font-weight: bold;
     margin-right: 3px;
+
 }
 /* Gradent to all drop down menus */
 .dropdown-menu li:hover > a {
@@ -1690,6 +1691,14 @@ ul.top-product-tab li a {
     border-radius: 4px;
     box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
 }
+.col-sm-9 .table img{
+    width: 47px;
+    height: 47px;
+}
+.text-after{
+    display: flex;
+    flex-wrap: nowrap;
+}
 .btn-default,.btn-primary {
     font-size: 12px;
     line-height: 1;
@@ -1784,6 +1793,7 @@ fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary:hover{
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
     background-color: #da4f49;
     background-repeat: repeat-x;
+    margin-left: 5px;
 }
 .btn-danger:hover, .btn-danger:active,
 .btn-danger.active, .btn-danger.disabled, .btn-danger[disabled] {
