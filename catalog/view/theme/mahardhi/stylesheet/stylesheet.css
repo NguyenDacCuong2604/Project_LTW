@@ -1069,7 +1069,7 @@ header.active .header-top {
 }
 #cart .dropdown-menu .product-cart-img img{
     border-radius: 0; 
-    max-width: 100%;
+    max-width: 70%;
 }
 #cart .dropdown-menu li {
     float: none;
