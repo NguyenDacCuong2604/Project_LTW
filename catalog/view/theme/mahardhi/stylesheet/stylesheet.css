@@ -2426,7 +2426,7 @@ p.powered {
     padding-right: 0px;
 }
 .text-right.show-text {
-    padding: 0px 5px;
+    padding: 0px 5px ;
 }
 .text_sort {
     line-height: 44px;
@@ -2445,9 +2445,17 @@ p.powered {
     pointer-events: none;
 }
 .text_limit {
-    margin: 0px 10px 0;
-    line-height: 44px;
+    margin: 0  5px;
+
 }
+.show-select{
+    padding: 0 0 0 21px;
+}
+.rows  img{
+    width: 750px;
+    height: 400px;
+}
+
 .product-sorting select.form-control {
     appearance: none;
     -o-appearance: none;
